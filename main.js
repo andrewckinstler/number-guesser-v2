@@ -23,5 +23,7 @@ function setMaxValue(){
 function generateNumber(){
 	var min = Math.ceil(minRange.value);
 	var max = Math.floor(maxRange.value);
-	var d = Math.floor(Math.random() * (max - min)) + min;
+	var randomNumber = Math.floor(Math.random() * (max - min)) + min;
 }
+
+
