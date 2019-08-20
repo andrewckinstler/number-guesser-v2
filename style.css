@@ -99,12 +99,33 @@ header {
 }
 
 #current__range2--container {
-	width: 30%;
+	width: 100%;
 	height: 35px;
 	display: flex;
 	align-items: center;
+	display: block;
 }
 
+#js__guess--button {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+}
+
+.button {
+	display: flex;
+	width: 150px;
+	height: 35px;
+	background: #6E6E6E;
+	color: #ffffff;
+	border: none;
+	border-radius: 20px;
+}
+
+#js__name2--guess {
+	display: block;
+}
 /*RIGHT SIDE / PLAYER CARD ********************************/
 
 .main__right--conatiner {
