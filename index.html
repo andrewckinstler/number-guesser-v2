@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>Number Guesser</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
 		<h1 id="header__h1">
-			NUMBER GUESSES
+			NUMBER<span id="h1__font--change">GUESSER</span>
 		</h1>
 		<p id="header__p">
 			ULTIMATE CHALLENGER EDITION
@@ -23,11 +23,11 @@
 				<article id="range__input--container">
 					<p>
 						min range
-					</p>
-					<input id="js__min--range" type="number" name=""></input>
+					</p><br />
+					<input id="js__min--range" type="number" name="min range"></input>
 					<p>
 						max range</p>
-					<input id="js__max--range" type="number" name=""></input>
+					<input id="js__max--range" type="number" name="max range"></input>
 					<button id="js__range--button">
 						UPDATE
 					</button>
@@ -69,7 +69,19 @@
 					</article>
 				</article>
 			</article>
-			<article id="left__latest--score"></article>
+			<article id="left__latest--score">
+				<h4>Lastest Score</h4>
+				<article class="score--card">
+					Challenger 1 Name</br>
+					current guess</br>
+					<span class="guess--text" id="player__one--guess">--</span>
+				</article>
+				<article class="score--card">
+					Challenger 2 Name</br>
+					current guess</br>
+					<span class="guess--text" id="player__two--guess">--</span>
+				</article>
+			</article>
 		</section>
 		<section class="main__right--conatiner">
 		</section>
