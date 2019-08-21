@@ -4,13 +4,13 @@
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 }
-
-/** {
+/*
+* {
 	border: 1px solid red;
-}*/
+ } */
 
 body {
-	height: 140vh;
+	height: 90vh;
 	display: grid;
   grid-template-areas:
   "header header"
@@ -66,6 +66,7 @@ header {
 }
 
 #left__submit--guess {
+	/* display: flex; */
 	width: 100%;
 	height: 250px;
 	background: #ffffff;
@@ -97,38 +98,55 @@ header {
 	border-radius: 20px;
 }
 
-#current__range1--container {
-	width: 30%;
-	height: 35px;
-	display: flex;
+#current__range--container {
+	width: 100%;
+	/* height: 45px; */
 	align-items: center;
+	margin: 30px 0;
+	border: 2px dotted blue;
+	display: inline-block;
+	/* display: grid; */
+}
+#current__range--container p {
+	display: inline;
 }
 
-#current__range2--container {
+/* #current__range--container {
 	width: 100%;
 	height: 35px;
-	display: flex;
 	align-items: center;
 	display: block;
-}
+} */
 
 #js__guess--button {
 	display: flex;
 	align-items: center;
 	width: 100%;
 	height: 40px;
+	align-items: flex-end;
 }
 
 .button {
-	display: flex;
 	width: 150px;
 	height: 35px;
 	background: #6E6E6E;
 	color: #ffffff;
 	border: none;
 	border-radius: 20px;
+	text-align: center;
 	/* margin: 8px; */
-	justify-content: space-between;
+
+}
+
+#js__input--name1 {
+	width: 60%;
+	height: 35px;
+	display: inline;
+}
+
+#js__name1--guess {
+	width: 25%;
+	height: 35px;
 }
 
 #js__name2--guess {
@@ -151,6 +169,20 @@ h4 {
 
 #js__min--range {
 	display: block;
+}
+
+.error {
+	height: 15px;
+	width: auto;
+	font-size: 15px;
+}
+
+.form-box {
+	height: 50px;
+	width: 100%;
+	background: red;
+	border: 1px solid red;
+	margin: 25px 0;
 }
 
 /*RIGHT SIDE / PLAYER CARD ********************************/
