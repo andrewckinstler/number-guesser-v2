@@ -23,16 +23,22 @@
 				Set Range
 			</h3>
 			<article id="range__input--container">
+				<div id=mn-range>
 				<p>
-					min range
+					Min Range
 				</p>
 				<input id="js__min--range" type="number" name="min range"></input>
+			</div>
+			<div id="mx-range">
 				<p>
-					max range</p>
+					Max Range
+				</p>
 				<input id="js__max--range" type="number" name="max range"></input>
+			</div>
 				<button id="js__range--button">
 					UPDATE
 				</button>
+
 			</article>
 		</article>
 		<article id="left__submit--guess">
@@ -42,9 +48,9 @@
 
 			<article id="current__range--container">
 
-					<h3>
-						Challenger 1
-					</h3>
+				<h3>
+					Challenger 1
+				</h3>
 
 				<section class="form-box">
 					<div id="p1">
@@ -52,38 +58,38 @@
 							Name
 						</p>
 						<input id="js__input--name1" type="text" name="">
-				  </div>
-				  <div id="g1">
+					</div>
+					<div id="g1">
 						<p>
 							Guess
 						</p>
 						<input id="js__name1--guess" type="text" name="">
-				  </div>
+					</div>
 				</section>
-					<!-- <img class="error" src="./error-icon.svg"> -->
-					<!-- <span class="error">Enter a name</span> -->
+				<!-- <img class="error" src="./error-icon.svg"> -->
+				<!-- <span class="error">Enter a name</span> -->
 				<!-- </section> -->
 			</article>
 			<article id="current__range--container">
 				<!-- <section class="form-box"> -->
-					<h3>
-						Challenger 2
-					</h3>
-					<section class="form-box">
+				<h3>
+					Challenger 2
+				</h3>
+				<section class="form-box">
 					<div id="p2">
-							<p>
-								Name
-							</p>
+						<p>
+							Name
+						</p>
 						<input id="js__input--name2" type="text" name="">
 					</div>
 
 					<div id="g2">
-							<p>
-								Guess
-							</p>
-							<input id="js__name2--guess" type="text" name="">
-				  	</div>
-				  </section>
+						<p>
+							Guess
+						</p>
+						<input id="js__name2--guess" type="text" name="">
+					</div>
+				</section>
 
 			</article>
 
@@ -99,12 +105,15 @@
 			<article class="score--card">
 				<h4>Challenger 1 Name</h4>
 				<p>current guess</p>
+
 				<span class="guess--text" id="player__one--guess">--</span>
+			<div id="p__inner"></div>
 			</article>
 			<article class="score--card">
 				<h4>Challenger 2 Name</h4>
 				<p>current guess</p>
 				<span class="guess--text" id="player__two--guess">--</span>
+				<div id="p2__inner"></div>
 			</article>
 		</article>
 	</section>

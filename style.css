@@ -10,14 +10,14 @@
  } */
 
 body {
-	height: 90vh;
+	height: 110vh;
 	display: grid;
   grid-template-areas:
   "header header"
   "nav article"
   "nav article";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 13% 50% 50%;
+  grid-template-rows: 15% 42% 43%;
 }
 
 /*HEADER!!!*************************************/
@@ -33,7 +33,7 @@ header {
 }
 
 #header__h1 {
-	line-height: 70%;
+	line-height: 60%;
 }
 
 #header__p {
@@ -192,6 +192,7 @@ h4 {
 
 .score--card {
 	width: 50%;
+	text-align: center;
 }
 
 .guess--text {
@@ -200,6 +201,19 @@ h4 {
 
 #js__min--range {
 	display: block;
+	width: 90%;
+	height: 35px;
+}
+
+#js__max--range {
+	width: 90%;
+	height: 35px;
+}
+
+#mn-range,
+#mx-range {
+	width: 30%;
+	margin-top: 15px;
 }
 
 .error {
@@ -213,6 +227,13 @@ h4 {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+}
+
+#js__range--button {
+	margin: 6% 0 0 12%;
+	width: 120px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 /*RIGHT SIDE / PLAYER CARD ********************************/
