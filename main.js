@@ -12,7 +12,8 @@ var pInner = document.getElementById("p__inner");
 var p2Inner = document.getElementById("p2__inner");
 var min = Math.ceil(minRange.value);
 var max = Math.floor(maxRange.value);
-var randomNumber = Math.floor(Math.random() * (maxRange.value - minRange.value)) + minRange.value;
+var randomNumber = 0;
+// var randomNumber = Math.floor(Math.random() * (max - min) + min);
 
 
 rangeButton.addEventListener('click', setRangeValue);
@@ -22,6 +23,9 @@ submitGuess.addEventListener('click', changeText);
 function setRangeValue(){
     setMinValue();
     setMaxValue();
+    generateNumber();
+    console.log(minRange.value);
+    console.log(maxRange.value);
 };
 
 function setMinValue(){
@@ -31,8 +35,14 @@ function setMinValue(){
 function setMaxValue(){
     maxNumberDisplay.innerText = maxRange.value;
 };
-// function generateNumber(){
-// }
+
+function generateNumber(){
+min = Math.ceil(minRange.value);
+max = Math.floor(maxRange.value);
+randomNumber = Math.floor(Math.random() * (max - min) + min);
+		console.log(randomNumber);
+}
+
 function changeText() {
         currentGuessOne.innerText = playerOneGuess.value;
         currentGuessTwo.innerText = playerTwoGuess.value;
