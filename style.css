@@ -10,7 +10,7 @@
  } */
 
 body {
-	height: 110vh;
+	/* height: 110vh; */
 	display: grid;
   grid-template-areas:
   "header header"
@@ -58,7 +58,7 @@ header {
 
 #left__set--range {
 	width: 100%;
-	height: 150px;
+	/* height: 150px; */
 	background: #ffffff;
 	border: 2px solid #d0d2d3;
 	padding: 2%;
@@ -66,7 +66,7 @@ header {
 
 #left__submit--guess {
 	width: 100%;
-	height: 275px;
+	/* height: 275px; */
 	background: #ffffff;
 	border: 2px solid #d0d2d3;
 	padding: 2%;
@@ -75,21 +75,21 @@ header {
 #left__latest--score {
 	display: flex;
 	width: 100%;
-	height: 200px;
+	/* height: 200px; */
 	background: #ffffff;
 	border: 2px solid #d0d2d3;
 }
 
 #range__input--container {
 	width: 100%;
-	height: 40px;
+	/* height: 40px; */
 	display: flex;
 	align-items: center;
 }
 
 #js__range--button {
 	width: 90px;
-	height: 35px;
+	/* height: 35px; */
 	background: #6E6E6E;
 	color: #ffffff;
 	border: none;
@@ -110,24 +110,24 @@ header {
 
 #p1 {
 	width: 60%;
-	height: 60px;
+	/* height: 60px; */
 	margin-right: 10px;
 }
 
 #g1 {
 	width: 35%;
-	height: 60px;
+	/* height: 60px; */
 }
 
 #p2 {
 	width: 60%;
-	height: 60px;
+	/* height: 60px; */
 	margin-right: 10px;
 }
 
 #g2 {
 	width: 35%;
-	height: 60px;
+	/* height: 60px; */
 }
 
 /* #current__range--container {
@@ -141,13 +141,13 @@ header {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	height: 40px;
+	/* height: 40px; */
 	align-items: flex-end;
 }
 
 .button {
 	width: 150px;
-	height: 35px;
+	/* height: 35px; */
 	background: #6E6E6E;
 	color: #ffffff;
 	border: none;
@@ -160,24 +160,24 @@ header {
 
 #js__input--name1 {
 	width: 100%;
-	height: 35px;
+	/* height: 35px; */
 	display: inline;
 }
 
 #js__input--name2 {
 	width: 100%;
-	height: 35px;
+	/* height: 35px; */
 	display: inline;
 }
 
 #js__name1--guess {
 	width: 100%;
-	height: 35px;
+	/* height: 35px; */
 }
 
 #js__name2--guess {
 	width: 100%;
-	height: 35px;
+	/* height: 35px; */
 }
 
 #js__name2--guess {
@@ -202,12 +202,12 @@ h4 {
 #js__min--range {
 	display: block;
 	width: 90%;
-	height: 35px;
+	/* height: 35px; */
 }
 
 #js__max--range {
 	width: 90%;
-	height: 35px;
+	/* height: 35px; */
 }
 
 #mn-range,
@@ -223,7 +223,7 @@ h4 {
 }
 
 .form-box {
-	height: 60px;
+	/* height: 60px; */
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -242,7 +242,7 @@ h4 {
 	display: grid;
 	grid-area: article;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	background: #D1D2D4;
 	border-left: 3px solid #6e6e6e;
 }
