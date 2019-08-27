@@ -10,114 +10,112 @@
 
 <body>
 	<header>
-		<h1 id="header__h1">
-			NUMBER<span id="h1__font--change">GUESSER</span>
+		<h1 class="header__h1">
+			NUMBER<span class="h1__font--change">GUESSER</span>
 		</h1>
-		<p id="header__p">
+		<p class="header__p">
 			ULTIMATE CHALLENGER EDITION
 		</p>
 	</header>
 	<section class="main__left--conatiner">
-		<article id="left__set--range">
+		<article class="left__set--range">
 			<h3>
 				Set Range
 			</h3>
-			<article id="range__input--container">
-				<div id=mn-range>
-				<p>
-					Min Range
-				</p>
-				<input id="js__min--range" type="number" name="min range"></input>
-			</div>
-			<div id="mx-range">
-				<p>
-					Max Range
-				</p>
-				<input id="js__max--range" type="number" name="max range"></input>
-			</div>
-				<button id="js__range--button">
+			<article class="range__input--container">
+				<div class="mn-range">
+					<p>
+						Min Range
+					</p>
+					<input class="js__min--range" type="number"></input>
+				</div>
+				<div class="mx-range">
+					<p>
+						Max Range
+					</p>
+					<input class="js__max--range" type="number"></input>
+				</div>
+				<button class="js__range--button">
 					UPDATE
 				</button>
 
 			</article>
 		</article>
-		<article id="left__submit--guess">
-			<h3>
-				The Current Range is <span id="min__number--display">1</span> to <span id="max__number--display">100</span>
-			</h3>
+		<article class="left__submit--guess">
+			The Current Range is <span class="min__number--display">1</span> to <span class="max__number--display">100</span>
 
-			<article id="current__range--container">
+			<article class="current__range--container">
 
 				<h3>
 					Challenger 1
 				</h3>
 
 				<section class="form-box">
-					<div id="p1">
+					<div class="p1">
 						<p>
 							Name
 						</p>
-						<input id="js__input--name1" type="text" name="">
+						<input class="js__input--name1" type="text">
 					</div>
-					<div id="g1">
+					<div class="g1">
 						<p>
 							Guess
 						</p>
-						<input id="js__name1--guess" type="text" name="">
+						<input class="js__name1--guess" type="text">
 					</div>
 				</section>
-				<!-- <img class="error" src="./error-icon.svg"> -->
-				<!-- <span class="error">Enter a name</span> -->
-				<!-- </section> -->
-			</article>
-			<article id="current__range--container">
-				<!-- <section class="form-box"> -->
+				<img class="error" src="./error-icon.svg">
+				<span class="error">Enter a name</span>
 				<h3>
 					Challenger 2
 				</h3>
 				<section class="form-box">
-					<div id="p2">
+					<div class="p2">
 						<p>
 							Name
 						</p>
-						<input id="js__input--name2" type="text" name="">
+						<input class="js__input--name2" type="text">
 					</div>
 
-					<div id="g2">
+					<div class="g2">
 						<p>
 							Guess
 						</p>
-						<input id="js__name2--guess" type="text" name="">
+						<input class="js__name2--guess" type="text">
 					</div>
 				</section>
-
+				<img class="error" src="./error-icon.svg">
+				<span class="error">Enter a name</span>
 			</article>
 
-			<article id="js__guess--button">
-				<button id="guess__submit--button" class="button">SUBMIT GUESS</button>
-				<button id="guess__reset--button" class="button">RESET GAME</button>
-				<button id="guess__clear--button" class="button">CLEAR GAME</button>
+			<article class="js__guess--button">
+				<button class="guess__submit--button button">SUBMIT GUESS</button>
+				<button class="guess__reset--button button">RESET GAME</button>
+				<button class="guess__clear--button button">CLEAR GAME</button>
 			</article>
 		</article>
 		</article>
-		<article id="left__latest--score">
-			<h3>Lastest Score</h3>
+		<article class="left__latest--score">
+			<h3 class="latest">Lastest Score</h3>
 			<article class="score--card">
-				<h4>Challenger 1 Name</h4>
+				<h4 class="player-name">Challenger 1 Name</h4>
 				<p>current guess</p>
 
-				<span class="guess--text" id="player__one--guess">--</span>
-			<div id="p__inner"></div>
+				<span class="guess--text player__one--guess">--</span>
+				<div class="p__inner"></div>
 			</article>
 			<article class="score--card">
-				<h4>Challenger 2 Name</h4>
+				<h4 class="player-name2">Challenger 2 Name</h4>
 				<p>current guess</p>
-				<span class="guess--text" id="player__two--guess">--</span>
-				<div id="p2__inner"></div>
+				<span class="guess--text player__two--guess">--</span>
+				<div class="p2__inner"></div>
 			</article>
 		</article>
 	</section>
 	<section class="main__right--conatiner">
+		<div class="card">
+
+		</div>
 	</section>
 </body>
 <script src="main.js" type="text/javascript"></script>
