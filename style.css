@@ -120,7 +120,7 @@ header {
 
 .button {
   width: 150px;
-  background: #6E6E6E;
+  background: #D0D2D3;
   color: #ffffff;
   border: none;
   border-radius: 20px;
@@ -158,6 +158,7 @@ header {
 }
 
 /* NEW CSS CODE */
+
 h4 {
   display: block;
   width: 100%;
@@ -218,6 +219,10 @@ h4 {
 
 .latest {
   margin: 5px 0 5px 10px;
+}
+
+.active {
+  background: #6E6E6E;
 }
 
 /*RIGHT SIDE / PLAYER CARD ********************************/
