@@ -1,248 +1,235 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
-/*
-* {
-	border: 1px solid red;
- } */
 
 body {
-	height: 110vh;
-	display: grid;
+  display: grid;
   grid-template-areas:
-  "header header"
-  "nav article"
-  "nav article";
+    "header header"
+    "nav article"
+    "nav article";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 15% 42% 43%;
 }
 
 /*HEADER!!!*************************************/
-
 header {
-	display: grid;
-	grid-area: header;
-	background: #404041;
-	color: #dd1972;
-	font-size: 2.5vw;
-	text-align: center;
-	padding: 2.5%;
+  display: grid;
+  grid-area: header;
+  background: #404041;
+  color: #dd1972;
+  font-size: 27px;
+  text-align: center;
+  padding: 2.5%;
 }
 
-#header__h1 {
-	line-height: 60%;
+.header__h1 {
+  line-height: 60%;
 }
 
-#header__p {
-	color: #ffffff;
-	font-size: 1.5vw;
+.header__p {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
-#h1__font--change {
-	font-weight: 300;
+.h1__font--change {
+  font-weight: 300;
 }
 
 /*LEFT SIDE / GAME ********************************************/
-
 .main__left--conatiner {
-	display: grid;
-	grid-area: nav;
-	width: 100%;
-	height: 100%;
-	background: #f7f7f7;
-	padding: 3%;
+  display: grid;
+  grid-area: nav;
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+  padding: 3%;
 }
 
-#left__set--range {
-	width: 100%;
-	height: 150px;
-	background: #ffffff;
-	border: 2px solid #d0d2d3;
-	padding: 2%;
+.left__set--range {
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #d0d2d3;
+  padding: 2%;
+  margin-bottom: 15px;
 }
 
-#left__submit--guess {
-	width: 100%;
-	height: 275px;
-	background: #ffffff;
-	border: 2px solid #d0d2d3;
-	padding: 2%;
+.left__submit--guess {
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #d0d2d3;
+  padding: 2%;
+  margin-bottom: 15px;
 }
 
-#left__latest--score {
-	display: flex;
-	width: 100%;
-	height: 200px;
-	background: #ffffff;
-	border: 2px solid #d0d2d3;
+.left__latest--score {
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #d0d2d3;
 }
 
-#range__input--container {
-	width: 100%;
-	height: 40px;
-	display: flex;
-	align-items: center;
+.range__input--container {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-#js__range--button {
-	width: 90px;
-	height: 35px;
-	background: #6E6E6E;
-	color: #ffffff;
-	border: none;
-	border-radius: 20px;
+.js__range--button {
+  background: #6E6E6E;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 30px;
 }
 
-#current__range--container {
-	width: 100%;
-	/* height: 45px; */
-	align-items: center;
-/*	margin: 30px 0;*/
-	display: inline-block;
-	/* display: grid; */
-}
-#current__range--container p {
-/*	display: inline;*/
+.current__range--container {
+  width: 100%;
+  align-items: center;
+  display: inline-block;
 }
 
-#p1 {
-	width: 60%;
-	height: 60px;
-	margin-right: 10px;
+.p1 {
+  width: 60%;
+  margin-right: 10px;
 }
 
-#g1 {
-	width: 35%;
-	height: 60px;
+.g1 {
+  width: 35%;
 }
 
-#p2 {
-	width: 60%;
-	height: 60px;
-	margin-right: 10px;
+.p2 {
+  width: 60%;
+  margin-right: 10px;
 }
 
-#g2 {
-	width: 35%;
-	height: 60px;
+.g2 {
+  width: 35%;
 }
 
-/* #current__range--container {
-	width: 100%;
-	height: 35px;
-	align-items: center;
-	display: block;
-} */
-
-#js__guess--button {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 40px;
-	align-items: flex-end;
+.js__guess--button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-end;
 }
 
 .button {
-	width: 150px;
-	height: 35px;
-	background: #6E6E6E;
-	color: #ffffff;
-	border: none;
-	border-radius: 20px;
-	text-align: center;
-	margin: 8px 8px 0;
-	font-size: 16px;
-	font-weight: bold;
+  width: 150px;
+  background: #D0D2D3;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  margin: 15px 15px 0 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-#js__input--name1 {
-	width: 100%;
-	height: 35px;
-	display: inline;
+.js__input--name1 {
+  width: 100%;
+  height: 35px;
+  display: inline;
 }
 
-#js__input--name2 {
-	width: 100%;
-	height: 35px;
-	display: inline;
+.js__input--name2 {
+  width: 100%;
+  height: 35px;
+  display: inline;
 }
 
-#js__name1--guess {
-	width: 100%;
-	height: 35px;
+.js__name1--guess {
+  width: 100%;
+  height: 35px;
 }
 
-#js__name2--guess {
-	width: 100%;
-	height: 35px;
+.js__name2--guess {
+  width: 100%;
+  height: 35px;
 }
 
-#js__name2--guess {
-	display: block;
+.js__name2--guess {
+  display: block;
 }
 
 /* NEW CSS CODE */
+
 h4 {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .score--card {
-	width: 50%;
-	text-align: center;
+  display: inline-block;
+  width: 49%;
+  text-align: center;
 }
 
 .guess--text {
-	font-size: 100px;
+  font-size: 100px;
+  color: #F74D9B;
 }
 
-#js__min--range {
-	display: block;
-	width: 90%;
-	height: 35px;
+.js__min--range {
+  width: 90%;
+  height: 35px;
 }
 
-#js__max--range {
-	width: 90%;
-	height: 35px;
+.js__max--range {
+  width: 90%;
+  height: 35px;
 }
 
-#mn-range,
-#mx-range {
-	width: 30%;
-	margin-top: 15px;
+.mn-range,
+.mx-range {
+  width: 30%;
+  margin-top: 15px;
 }
 
 .error {
-	height: 15px;
-	width: auto;
-	font-size: 15px;
+  height: 15px;
+  width: auto;
+  font-size: 15px;
+  color: #DD1972;
 }
 
 .form-box {
-	height: 60px;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-#js__range--button {
-	margin: 6% 0 0 12%;
-	width: 120px;
-	font-size: 16px;
-	font-weight: bold;
+.js__range--button {
+  margin: 6% 0 0 12%;
+  width: 120px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.min__number--display,
+.max__number--display {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.latest {
+  margin: 5px 0 5px 10px;
+}
+
+.active {
+  background: #6E6E6E;
 }
 
 /*RIGHT SIDE / PLAYER CARD ********************************/
-
 .main__right--conatiner {
-	display: grid;
-	grid-area: article;
-	width: 100%;
-	height: 100%;
-	background: #D1D2D4;
-	border-left: 3px solid #6e6e6e;
+  display: grid;
+  grid-area: article;
+  width: 100%;
+  background: #D1D2D4;
+  border-left: 3px solid #6e6e6e;
 }
