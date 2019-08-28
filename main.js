@@ -15,6 +15,7 @@ var changeName2 = document.querySelector('.player-name2')
 var resetButton = document.querySelector(".guess__reset--button");
 var clearButton = document.querySelector('.guess__clear--button')
 var formArray = document.querySelectorAll(".required")
+var nameError = document.querySelector('.error')
 var pInner = document.querySelector(".p__inner");
 var p2Inner = document.querySelector(".p2__inner");
 var randomNumber = 0;
@@ -22,9 +23,7 @@ var randomNumber = 0;
 rangeButton.addEventListener('click', setRangeValue);
 submitGuess.addEventListener('click', changeText);
 resetButton.addEventListener('click', reset);
-clearButton.addEventListener('click', clearGame);
-
-
+clearButton.addEventListener('click', clear);
 
 function generateNumber() {
   var min = Math.ceil(parseInt(minRange.value));
@@ -35,7 +34,6 @@ function generateNumber() {
 function setRangeValue() {
   randomNumber = generateNumber();
   setValue();
-  console.log(randomNumber);
 };
 
 function setValue() {
@@ -58,30 +56,83 @@ function getWinner(guess) {
   }
   if (parseInt(guess) > randomNumber) {
     return "That's too high!";
-  }  else if (parseInt(guess) < randomNumber) {
+  } else if (parseInt(guess) < randomNumber) {
     return "That's too low!";
   }
   return 'BOOM!';
 };
 
-formArray.forEach(function(form){
-  form.addEventListener('keydown', function(){
-    clearButton.classList.add('active')
-  });
+
+formArray.forEach(function(form) {
+  form.addEventListener('keyup', playGame);
 });
 
+formArray.forEach(function(form) {
+  form.addEventListener('keyup', resetGame);
+});
+
+formArray.forEach(function(form) {
+  form.addEventListener('keyup', clearGame);
+});
+
+
+
 function reset() {
-  playerOneGuess.value = '';
-  playerTwoGuess.value = '';
-  name1.value = '';
-  name2.value = '';
+  currentGuessOne.innerText = '--';
+  currentGuessTwo.innerText = '--';
+  changeName.innerText = 'Challenger 1';
+  changeName2.innerText = 'Challenger 2';
+  pInner.innerText = ''
+  p2Inner.innerText = ''
+  minNumberDisplay.innerText = 1;
+  maxNumberDisplay.innerText = 100;
   randomNumber = generateNumber();
-  console.log(randomNumber);
+
+}
+
+function clear() {
+  currentGuessOne.innerText = '--';
+  currentGuessTwo.innerText = '--';
+  changeName.innerText = 'Challenger 1';
+  changeName2.innerText = 'Challenger 2';
+  formArray.forEach(function(form) {
+    form.value = '';
+  });
+}
+
+function playGame() {
+  if (playerOneGuess.value !== '' &&
+    playerTwoGuess.value !== '' &&
+    name1.value !== '' &&
+    name2.value !== '') {
+    submitGuess.classList.add('active');
+    submitGuess.disabled = false;
+  } else {
+    submitGuess.disabled = true;
+  }
+}
+
+function resetGame() {
+  if (playerOneGuess.value !== '' ||
+    playerTwoGuess.value !== '' ||
+    name1.value !== '' ||
+    name2.value !== '') {
+    resetButton.classList.add('active');
+    resetButton.disabled = false;
+  } else {
+    resetButton.disabled = true;
+  }
 }
 
 function clearGame() {
-  playerOneGuess.value = '';
-  playerTwoGuess.value = '';
-  name1.value = '';
-  name2.value = '';
+  if (playerOneGuess.value !== '' ||
+    playerTwoGuess.value !== '' ||
+    name1.value !== '' ||
+    name2.value !== '') {
+    clearButton.classList.add('active');
+    clearButton.disabled = false;
+    console.log(randomNumber);
+  } else {
+    clearButton.disabled = true;
+  }
 }

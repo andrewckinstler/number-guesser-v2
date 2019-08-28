@@ -24,98 +24,71 @@
 			</h3>
 			<article class="range__input--container">
 				<div class="mn-range">
-					<p>
-						Min Range
-					</p>
+					<p>Min Range</p>
 					<input class="js__min--range" type="number"></input>
 				</div>
 				<div class="mx-range">
-					<p>
-						Max Range
-					</p>
+					<p>Max Range</p>
 					<input class="js__max--range" type="number"></input>
 				</div>
-				<button class="js__range--button">
-					UPDATE
-				</button>
-
+				<button class="js__range--button">UPDATE</button>
 			</article>
 		</article>
 		<article class="left__submit--guess">
 			The Current Range is <span class="min__number--display">1</span> to <span class="max__number--display">100</span>
-
 			<article class="current__range--container">
-
-				<h3>
-					Challenger 1
-				</h3>
-
+				<h3>Challenger 1</h3>
 				<section class="form-box">
-					<div class="p1">
-						<p>
-							Name
-						</p>
-						<input class="js__input--name1 required" type="text">
+					<div class="player">
+						<p>Name</p>
+						<input class="js__input--name1 required" type="text"></input>
 					</div>
-					<div class="g1">
-						<p>
-							Guess
-						</p>
-						<input class="js__name1--guess required" type="number">
+					<div class="guess">
+						<p>Guess</p>
+						<input class="js__name1--guess required" type="number"></input>
 					</div>
 				</section>
-				<img class="error" src="./error-icon.svg">
-				<span class="error">Enter a name</span>
-				<h3>
-					Challenger 2
-				</h3>
-				<section class="form-box">
-					<div class="p2">
-						<p>
-							Name
-						</p>
-						<input class="js__input--name2 required" type="text">
+				<img class="error hide" src="./error-icon.svg">
+				<span class="error hide">Enter a name</span>
+				<h3>Challenger 2</h3> <section class="form-box">
+					<div class="player">
+						<p>Name</p>
+						<input class="js__input--name2 required" type="text"></input>
 					</div>
-
-					<div class="g2">
-						<p>
-							Guess
-						</p>
-						<input class="js__name2--guess required" type="number">
+					 <div class="guess">
+					<p>Guess</p>
+					<input class="js__name2--guess required" type="number"></input>
 					</div>
-				</section>
-				<img class="error" src="./error-icon.svg">
-				<span class="error">Enter a name</span>
-			</article>
+	</section>
+	<img class="error hide" src="./error-icon.svg">
+	<span class="error hide">Enter a name</span>
+	</article>
+	<article class="js__guess--button">
+		<button class="guess__submit--button button" disabled>SUBMIT GUESS</button>
+		<button class="guess__reset--button button" disabled>RESET GAME</button>
+		<button class="guess__clear--button button" disabled>CLEAR GAME</button>
+	</article>
+	</article>
+	</article>
+	<article class="left__latest--score">
+		<h3 class="latest">Lastest Score</h3>
+		<article class="score--card">
+			<h4 class="player-name">Challenger 1 Name</h4>
+			<p>current guess</p>
 
-			<article class="js__guess--button">
-				<button class="guess__submit--button button">SUBMIT GUESS</button>
-				<button class="guess__reset--button button">RESET GAME</button>
-				<button class="guess__clear--button button">CLEAR GAME</button>
-			</article>
+			<span class="guess--text player__one--guess">--</span>
+			<div class="p__inner"></div>
 		</article>
+		<article class="score--card">
+			<h4 class="player-name2">Challenger 2 Name</h4>
+			<p>current guess</p>
+			<span class="guess--text player__two--guess">--</span>
+			<div class="p2__inner"></div>
 		</article>
-		<article class="left__latest--score">
-			<h3 class="latest">Lastest Score</h3>
-			<article class="score--card">
-				<h4 class="player-name">Challenger 1 Name</h4>
-				<p>current guess</p>
-
-				<span class="guess--text player__one--guess">--</span>
-				<div class="p__inner"></div>
-			</article>
-			<article class="score--card">
-				<h4 class="player-name2">Challenger 2 Name</h4>
-				<p>current guess</p>
-				<span class="guess--text player__two--guess">--</span>
-				<div class="p2__inner"></div>
-			</article>
-		</article>
+	</article>
 	</section>
 	<section class="main__right--conatiner">
 		<div class="card">
-			
-
 		</div>
 	</section>
 </body>
