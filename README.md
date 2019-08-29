@@ -11,4 +11,4 @@ Thank you for your time.
 
 P.S. It looks like this. 
 
-![screenshot](https://ibb.co/tMsksNk)
+![screenshot](https://i.ibb.co/SXnWn1W/screencapture-file-Users-andrewkinstler-mod1-projects-number-guesser-v2-index-html-2019-08-28-20-20-45.png)
