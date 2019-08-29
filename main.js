@@ -22,7 +22,7 @@ var randomNumber = 0;
 
 rangeButton.addEventListener('click', setRangeValue);
 submitGuess.addEventListener('click', changeText);
-resetButton.addEventListener('click', reset);
+resetButton.addEventListener('click', initialize);
 clearButton.addEventListener('click', clear);
 
 function generateNumber() {
@@ -76,28 +76,29 @@ formArray.forEach(function(form) {
 });
 
 
-
-function reset() {
+function initialize() {
   currentGuessOne.innerText = '--';
   currentGuessTwo.innerText = '--';
-  changeName.innerText = 'Challenger 1';
-  changeName2.innerText = 'Challenger 2';
+  changeName.innerText = 'Challenger 1 Name';
+  changeName2.innerText = 'Challenger 2 Name';
   pInner.innerText = ''
   p2Inner.innerText = ''
-  minNumberDisplay.innerText = 1;
-  maxNumberDisplay.innerText = 100;
+  minRange.value = 1;
+  maxRange.value = 100;
+  minNumberDisplay.innerText = minRange.value;
+  maxNumberDisplay.innerText = maxRange.value;
   randomNumber = generateNumber();
-
 }
 
 function clear() {
   currentGuessOne.innerText = '--';
   currentGuessTwo.innerText = '--';
-  changeName.innerText = 'Challenger 1';
-  changeName2.innerText = 'Challenger 2';
+  changeName.innerText = 'Challenger 1 Name';
+  changeName2.innerText = 'Challenger 2 Name';
   formArray.forEach(function(form) {
     form.value = '';
   });
+  initialize();
 }
 
 function playGame() {
@@ -131,7 +132,6 @@ function clearGame() {
     name2.value !== '') {
     clearButton.classList.add('active');
     clearButton.disabled = false;
-    console.log(randomNumber);
   } else {
     clearButton.disabled = true;
   }

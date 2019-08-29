@@ -69,7 +69,6 @@ header {
 }
 
 .range__input--container {
-
   display: flex;
   align-items: center;
 }
@@ -189,7 +188,7 @@ h4 {
 }
 
 .hide {
-  display: hidden;
+  display: none;
 }
 
 .form-box {
@@ -211,7 +210,6 @@ h4 {
 .active {
   background: #6E6E6E;
 }
-
 
 /*RIGHT SIDE / PLAYER CARD ********************************/
 .main__right--conatiner {
